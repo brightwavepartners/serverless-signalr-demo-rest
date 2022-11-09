@@ -1,0 +1,16 @@
+<div>
+    <button type="button" class="btn btn-primary" (click)="broadcast()">Broadcast</button>
+    <input type="text" [(ngModel)]="message"/>
+</div>
+
+<div>
+    <button type="button" class="btn btn-primary" (click)="startWork()">Start Work</button>
+</div>    
+
+<!-- <div class="progress">
+    <div class="progress-bar" role="progressbar" [attr.aria-valuenow]="capacity" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: capacity + '%'}">
+    {{capacity}}%
+    </div>
+ </div> -->
+
+<router-outlet></router-outlet>
