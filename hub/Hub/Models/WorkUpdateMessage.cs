@@ -1,6 +1,4 @@
-﻿using Microsoft.Azure.WebJobs.Extensions.SignalRService;
-
-namespace SignalRService.Models
+﻿namespace SignalRService.Models
 {
     public class WorkUpdateMessage
     {

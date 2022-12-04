@@ -1,0 +1,13 @@
+secrets
+
+https://www.tomfaltesek.com/azure-functions-local-settings-json-and-source-control/
+https://damienaicheh.github.io/azure/azure-functions/dotnet/2022/05/10/use-settings-json-azure-function-en.html
+
+logging
+
+https://github.com/serilog-contrib/serilog-sinks-applicationinsights
+https://www.vivienfabing.com/aspnetcore/2019/02/21/how-to-add-logging-on-azure-with-aspnetcore-and-serilog.html
+
+managed identity
+
+https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-authorize-managed-identity

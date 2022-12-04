@@ -1,4 +1,11 @@
 {
+  "AppInsights": {
+    "InstrumentationKey": "--SECRET--"
+  },
+  "LogAnalyticsWorkspace": {
+    "AuthenticationId": "--SECRET--",
+    "WorkspaceId": "--SECRET--"
+  },
   "Host": {
     "CORS": "http://localhost:4200",
     "CORSCredentials": true

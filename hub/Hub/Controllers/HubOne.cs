@@ -9,12 +9,12 @@ using System.Text.Json;
 
 namespace SignalRService.Controllers
 {
-    public static class HubOne
+    public class HubOne
     {
         #region Methods
 
         [FunctionName(nameof(Negotiate))]
-        public static SignalRConnectionInfo Negotiate(
+        public SignalRConnectionInfo Negotiate(
             [HttpTrigger(AuthorizationLevel.Anonymous)] HttpRequest req,
             [SignalRConnectionInfo(HubName = "hubone")] SignalRConnectionInfo connectionInfo)
         {
@@ -22,7 +22,7 @@ namespace SignalRService.Controllers
         }
 
         [FunctionName(nameof(Broadcast))]
-        public static async Task Broadcast(
+        public async Task Broadcast(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
             [SignalR(HubName = "hubone")] IAsyncCollector<SignalRMessage> signalRMessages)
         {
@@ -36,7 +36,7 @@ namespace SignalRService.Controllers
         }
 
         [FunctionName(nameof(WorkUpdate))]
-        public static async Task WorkUpdate(
+        public async Task WorkUpdate(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
             [SignalR(HubName = "hubone")] IAsyncCollector<SignalRMessage> signalRMessages)
         {
